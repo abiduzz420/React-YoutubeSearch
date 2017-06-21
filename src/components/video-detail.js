@@ -14,7 +14,7 @@ const VideoDetail = ({ video }) => {
         <div style={{ fontWeight: 'bold', fontSize: '1.5em' }}>
           {video.snippet.title}
         </div>
-        <div>{video.snippet.description}</div>
+        <div>{video.snippet.channelTitle}</div>
       </div>
     </div>
   );
