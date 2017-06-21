@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FormControl, InputGroup, Glyphicon, FormGroup } from 'react-bootstrap';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -17,9 +18,18 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
-        <input value={this.state.term} onChange={this.onInputChange} />
-      </div>
+      <FormGroup className="search-bar">
+        <InputGroup>
+          <FormControl
+            placeholder="Enter something here..."
+            value={this.state.term}
+            onChange={this.onInputChange}
+          />
+          <InputGroup.Addon>
+            <Glyphicon glyph="search" />
+          </InputGroup.Addon>
+        </InputGroup>
+      </FormGroup>
     );
   }
 }
