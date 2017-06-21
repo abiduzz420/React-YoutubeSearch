@@ -44,11 +44,11 @@ class App extends Component {
           onSelectVideo={this.onSelectVideo}
           videos={this.state.videos}
         />
-        <a href="https://github.com/abiduzz420/React-YoutubeSearch">
+        <a target="_blank" href="https://github.com/abiduzz420/">
           <img
             style={{
               position: 'absolute',
-              top: '20',
+              top: '5',
               left: '20'
             }}
             width="90px"
@@ -56,7 +56,10 @@ class App extends Component {
             alt="logo"
           />
         </a>
-        <a href="https://github.com/abiduzz420">
+        <a
+          target="_blank"
+          href="https://github.com/abiduzz420/React-YoutubeSearch"
+        >
           <img
             style={{ position: 'absolute', top: '0', right: '0', border: '0' }}
             src={forkImgURL}
