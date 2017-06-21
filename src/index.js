@@ -32,8 +32,22 @@ class App extends Component {
 
   render() {
     const videoSearch = _.debounce(this.videoSearch, 300);
+    const logoURL =
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYUeoLkA69LmVBSQodNu0uVgAMfmZkAOHlwwdUGDn-XcfaRGW8vg';
     return (
       <div>
+        <a href="localhost:8080">
+          <img
+            style={{
+              position: 'absolute',
+              top: '2',
+              left: '10'
+            }}
+            width="90px"
+            src={logoURL}
+            alt="logo"
+          />
+        </a>
         <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo} />
         <VideoList
