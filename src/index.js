@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('vidoes', this.state.videos);
     return (
       <div>
         <SearchBar />
